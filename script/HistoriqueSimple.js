@@ -3,7 +3,7 @@ $(document).ready(function () {
     loadHistorique('', '');
     function loadHistorique(dated, datef) {
         $.ajax({
-            url: 'controller/GestionPointage.php',
+            url: 'controller/gestionPointage.php',
             data: {op: 'historique', cin: employe, dated: dated, datef: datef},
             type: 'POST',
             success: function (data, textStatus, jqXHR) {

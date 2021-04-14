@@ -68,13 +68,13 @@ if ($_SESSION["employe"]) {
                                             <i class="zmdi zmdi-hc-1x zmdi-chart"></i>GESTION</a>
                                         <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                             <li>
-                                                <a href="#Departements" class="departement"><i class="zmdi zmdi-hc-1x zmdi-group-work"></i>Departements</a>
+                                                <a href="#filieres" class="filiere"><i class="zmdi zmdi-hc-1x zmdi-group-work"></i>filieres</a>
                                             </li>
                                             <li>
                                                 <a href="#Employés" class="employe"><i class="zmdi zmdi-hc-1x zmdi-accounts"></i>Employés</a>
                                             </li>
                                             <li>
-                                                <a href="#Fonctions" class="fonction"><i class="zmdi zmdi-hc-1x zmdi-settings"></i>Fonctions</a>
+                                                <a href="#classess" class="classes"><i class="zmdi zmdi-hc-1x zmdi-settings"></i>classess</a>
                                             </li>
                                             <li>
                                                 <a href="#Pointages" class="pointage"><i class="zmdi zmdi-hc-1x zmdi-check"></i>Pointages</a>
@@ -108,13 +108,13 @@ if ($_SESSION["employe"]) {
                                             <i class="zmdi zmdi-hc-1x zmdi-chart"></i>Gestion</a>
                                         <ul class="list-unstyled navbar__sub-list js-sub-list" style="display: block;">
                                             <li>
-                                                <a href="#Departements" class="departement"><i class="zmdi zmdi-hc-1x zmdi-group-work"></i>Departements</a>
+                                                <a href="#filieres" class="filiere"><i class="zmdi zmdi-hc-1x zmdi-group-work"></i>filieres</a>
                                             </li>
                                             <li>
                                                 <a href="#Employés" class="employe"><i class="zmdi zmdi-hc-1x zmdi-accounts"></i>Employés</a>
                                             </li>
                                             <li>
-                                                <a href="#Fonctions" class="fonction"><i class="zmdi zmdi-hc-1x zmdi-settings"></i>Fonctions</a>
+                                                <a href="#classess" class="classes"><i class="zmdi zmdi-hc-1x zmdi-settings"></i>classess</a>
                                             </li>
                                             <li>
                                                 <a href="#Pointages" class="pointage"><i class="zmdi zmdi-hc-1x zmdi-check"></i>Pointages</a>
@@ -159,8 +159,8 @@ if ($_SESSION["employe"]) {
                                                     </div>
                                                     <div class="content">
                                                         <a class="js-acc-btn text-light" href="#"><?php
-                                                            if (isset($_SESSION['nom'])) {
-                                                                echo $_SESSION['nom'];
+                                                            if (isset($_SESSION['IdFiliere'])) {
+                                                                echo $_SESSION['IdFiliere'];
                                                             }
                                                             ?></a>
                                                     </div>
@@ -178,8 +178,8 @@ if ($_SESSION["employe"]) {
                                                             <div class="content">
                                                                 <h5 class="name">
                                                                     <a href="#"><?php
-                                                                        if (isset($_SESSION['nom'])) {
-                                                                            echo $_SESSION['nom'];
+                                                                        if (isset($_SESSION['IdFiliere'])) {
+                                                                            echo $_SESSION['IdFiliere'];
                                                                         }
                                                                         ?></a>
                                                                 </h5>

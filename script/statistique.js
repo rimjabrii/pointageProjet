@@ -12,8 +12,7 @@ $(document).ready(function () {
                 }
             });
         }
-        getCountFrom('controller/gestionEmploye.php', 0);
-        getCountFrom('controller/gestionDepartement.php', 1);
-        getCountFrom('controller/gestionPointage.php', 2);
-        getCountFrom('controller/gestionFonction.php', 3);
+        getCountFrom('controller/gestionclasses.php', 0);
+        
+        getCountFrom('controller/gestionfiliere.php', 1);
     });

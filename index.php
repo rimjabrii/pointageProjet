@@ -10,7 +10,7 @@ if ($_SESSION["employe"]) {
 
 <head>
     <meta charset="UTF-8">
-    <title>Gestion Pointage</title>
+    <title>Gestionfilieresclasses</title>
 
 
     <link rel='stylesheet' href='vendor/bootstrap-4.1/bootstrap.min.css'>
@@ -32,26 +32,18 @@ if ($_SESSION["employe"]) {
         <nav id="sidebar" class="sidebar-wrapper">
             <div class="sidebar-content">
                 <div class="sidebar-brand">
-                    <a href="./" class="h2 pt-2">Pointage</a>
+                    
                     <div id="close-sidebar">
                         <i class="fas fa-times"></i>
                     </div>
                 </div>
                 <div class="sidebar-header">
-                    <div class="user-pic">
-                        <img class="img-responsive img-rounded"
-                            src="img/<?php if (isset($_SESSION['photo'])) {
-                                        echo $_SESSION['photo'];
-                                        } else
-                                            echo 'no-photo.png'
-                                        ?>"
-                            alt="User picture">
-                    </div>
+                    
                     <div class="user-info">
                         <span class="user-name">
                             <strong><?php
-                                        if (isset($_SESSION['nom'])) {
-                                            echo $_SESSION['nom'];
+                                        if (isset($_SESSION['IdFiliere'])) {
+                                            echo $_SESSION['IdFiliere'];
                                         }
                                     ?></strong>
                         </span>
@@ -60,7 +52,7 @@ if ($_SESSION["employe"]) {
                                             echo $_SESSION['role'];
                                         }
                                     ?></span>
-                        <span class="user-status">
+                      <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
                         </span>
@@ -75,25 +67,18 @@ if ($_SESSION["employe"]) {
                             <span>Gestion</span>
                         </li>
                         <li>
-                            <a href="./index.php?p=departement"><i class="zmdi zmdi-hc-1x zmdi-group-work"></i>Departements</a>
+                            <a href="./index.php?p=filiere"><i class="zmdi zmdi-hc-1x zmdi-group-work"></i>Filieres</a>
                         </li>
+                       
                         <li>
-                            <a href="./index.php?p=employe" ><i class="zmdi zmdi-hc-1x zmdi-accounts"></i>Employés</a>
+                            <a href="./index.php?p=classes"><i class="zmdi zmdi-hc-1x zmdi-settings"></i>Classes</a>
                         </li>
+                     
                         <li>
-                            <a href="./index.php?p=fonction"><i class="zmdi zmdi-hc-1x zmdi-settings"></i>Fonctions</a>
+                            <a href="./index.php?p=classificationlist"><i class="zmdi zmdi-hc-1x zmdi-settings"></i>Classification par liste</a>
                         </li>
-                        <li>
-                            <a href="./index.php?p=pointage"><i class="zmdi zmdi-hc-1x zmdi-check"></i>Pointages</a>
-                        </li>
-                        <li class="header-menu">
-                            <span>Statistique</span>
-                        </li>
-                        <li>
-                            <a href="./index.php?p=statistiques"><i class="zmdi zmdi-hc-1x zmdi-group-work"></i>Statistiques</a>
-                        </li>
-                        <li>
-                            <a href="./index.php?p=historique"><i class="zmdi zmdi-hc-1x zmdi-accounts"></i>Historique</a>
+                         <li>
+                            <a href="./index.php?p=statistiques"><i class="zmdi zmdi-hc-1x zmdi-settings"></i>Graphes</a>
                         </li>
                     </ul>
                 </div>
@@ -113,12 +98,12 @@ if ($_SESSION["employe"]) {
 
                 <?php
                     if( isset($_GET['p']) && $_GET['p'] != ""){
-                        if($_GET['p']=="departement"){
-                            include_once './pages/departement.php';
+                        if($_GET['p']=="filiere"){
+                            include_once './pages/filiere.php';
                         }elseif ($_GET['p']=="employe"){
                             include_once './pages/employe.php';
-                        }elseif($_GET['p']=="fonction"){
-                            include_once './pages/Fonction.php';
+                        }elseif($_GET['p']=="classes"){
+                            include_once './pages/classes.php';
                         }elseif($_GET['p']=="pointage"){
                             include_once './pages/Pointage.php';
                         }elseif($_GET['p']=="historique"){
@@ -126,8 +111,11 @@ if ($_SESSION["employe"]) {
                         }elseif($_GET['p']=="statistiques"){
                             include_once './pages/statistiques.php';
                         }
+                        elseif($_GET['p']=="classificationlist"){
+                            include_once './pages/classificationlist.php';
+                        }
                     }else{
-                        include_once './pages/statistiques.php';
+                        include_once './pages/classificationlist.php';
                     }
                 ?>
             </div>
@@ -135,7 +123,7 @@ if ($_SESSION["employe"]) {
         </main>
         <!-- page-content" -->
     </div>
-    <!-- page-wrapper -->
+    <!-- page-wrapper -->   
     <script src="script/index.js"></script>
 
 </body>

@@ -8,7 +8,7 @@ if(session_status() != PHP_SESSION_ACTIVE) {
 <div class="container-fluid">
     <div class="card bg-white" >
         <div class="card-header card-color">
-            <p class="h2 text-center text-uppercase font-weight-bold pt-2">Gestion des departements</p>
+            <p class="h2 text-center text-uppercase font-weight-bold pt-2">Gestion des filieres</p>
         </div>
         <div class="card-body container-fluid" >
             <div class="row">
@@ -46,7 +46,7 @@ if(session_status() != PHP_SESSION_ACTIVE) {
         </div>
     </div>
 </div>
-<script src="script/departement.js" type="text/javascript"></script>
+<script src="script/filiere.js" type="text/javascript"></script>
 <?php
 
 }else{

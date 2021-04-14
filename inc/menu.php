@@ -35,10 +35,10 @@
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="">
                     <ul class = "list-group list-group-flush ">
-                        <a href = "Employe.php"> <li class = "list-group-item"> <i class="fa fa-table fa-fw"></i>  Gestion des employés</li></a>
-                        <a href = "Fonction.php"><li class = "list-group-item"><i class="fa fa-table fa-fw"></i> Gestion des fonctions</li></a>
-                        <a href = "Departement.php"><li class = "list-group-item active"><i class="fa fa-table fa-fw"></i> Gestion des departements</li></a>
-                        <a href = "Pointage.php"><li class = "list-group-item"><i class="fa fa-table fa-fw"></i> Gestion des pointages</li></a>
+                        
+                        <a href = "filiere.php"><li class = "list-group-item"><i class="fa fa-table fa-fw"></i> Gestion des filieres</li></a>
+                        <a href = "classes.php"><li class = "list-group-item active"><i class="fa fa-table fa-fw"></i> Gestion des classes</li></a>
+                        
                     </ul>
                 </div>
             </div>
@@ -52,13 +52,7 @@
                 </h5>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="">
-                    <ul class = "list-group list-group-flush ">
-                        <a href = "historique.php"> <li class = "list-group-item">Historique de pointage</li></a>
-                        <a href = "statistiques.php"><li class = "list-group-item">Statistiques de Pointage</li></a>
-
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </div>

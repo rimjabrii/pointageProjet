@@ -15,5 +15,6 @@ interface IDao {
     function delete($o);
     function update($o);
     function findById($id);
+    function findByIdFiliere($idfilier);
     function findAll();
 }

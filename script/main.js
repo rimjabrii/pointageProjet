@@ -14,11 +14,11 @@ $(document).ready(function () {
     var btn = $("#connect");
     email.val('');
     password.val('');
-    $(".departement").click(function () {
-        main.load("./pages/departement.php");
+    $(".filiere").click(function () {
+        main.load("./pages/filiere.php");
     });
-    $(".fonction").click(function () {
-        main.load("./pages/fonction.php");
+    $(".classes").click(function () {
+        main.load("./pages/classes.php");
     });
     $(".employe").click(function () {
         main.load("./pages/employe.php");

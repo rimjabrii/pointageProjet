@@ -32,6 +32,7 @@ class EmployeService implements IDao {
         $f = $req->fetchAll(PDO::FETCH_OBJ);
         return $f;
     }
+    
 
     public function findById($cin) {
         $query = "select * from Employe where cin =?";
@@ -63,6 +64,10 @@ class EmployeService implements IDao {
         $req = $this->connexion->getConnexion()->prepare($query);
         $req->execute(array($o->getNom(), $o->getPrenom(), $o->getEmail(), $o->getTelephone(), $o->getAdresse(),
                     $o->getPassword(), $o->getRole(), $o->getPhoto(), $o->getFonction(), $o->getDepartement(), $o->getCin())) or die('Error');
+    }
+
+    public function findByIdFiliere($idfilier){
+
     }
 
 }

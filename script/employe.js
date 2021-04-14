@@ -30,7 +30,7 @@ $(document).ready(function () {
         }
     });
     $.ajax({
-        url: 'controller/GestionFonction.php',
+        url: 'controller/Gestionclasses.php',
         data: {op: ''},
         type: 'POST',
         success: function (data, textStatus, jqXHR) {
@@ -45,7 +45,7 @@ $(document).ready(function () {
         }
     });
     $.ajax({
-        url: 'controller/GestionDepartement.php',
+        url: 'controller/Gestionfiliere.php',
         data: {op: ''},
         type: 'POST',
         success: function (data, textStatus, jqXHR) {

@@ -7,11 +7,11 @@
  */
 
 /**
- * Description of departement
+ * Description of filiere
  *
  * @author mosab
  */
-class Departement {
+class filiere {
     private $id;
     private $code;
     private $libelle;

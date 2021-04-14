@@ -24,6 +24,10 @@ if ($op != '') {
         header('Content-type: application/json');
         echo json_encode($es->findById($cin));
         $r = false;
+    } elseif ($op == 'countFonction') {
+        header('Content-type: application/json');
+        echo json_encode($es->countByFonction());
+        $r = false;
     }
 }
 if ($r == true){

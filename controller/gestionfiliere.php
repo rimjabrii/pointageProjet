@@ -1,16 +1,16 @@
 <?php
 
 chdir('..');
-include_once 'services/DepartementService.php';
+include_once 'services/filiereService.php';
 extract($_POST);
 
-$ds = new DepartementService();
+$ds = new filiereService();
 
 if ($op != '') {
     if ($op == 'add') {
-        $ds->create(new Departement(0, $code, $libelle));
+        $ds->create(new filiere(0, $code, $libelle));
     } elseif ($op == 'update') {
-        $ds->update(new Departement($id, $code, $libelle));
+        $ds->update(new filiere($id, $code, $libelle));
     } elseif ($op == 'delete') {
         $ds->delete($ds->delete($id));
     }

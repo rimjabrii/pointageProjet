@@ -34,7 +34,7 @@ if (isset($_POST['btn_submit'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Title Page-->
-        <title>Gestion pointage - Login</title>
+        <title>Gestion Classes-Filieres - Login</title>
 
         <!-- Fontfaces CSS-->
         <link href="style/font-face.css" rel="stylesheet" media="all">
@@ -67,7 +67,7 @@ if (isset($_POST['btn_submit'])) {
                         <div class="login-content">
                             <div class="login-logo">
                                 <a href="./">
-                                    <span class="h2 text-dark">Pointage</span>
+                                    <span class="h2 text-dark">Classes-Filieres</span>
                                 </a>
                             </div>
                             <div class="login-form">
