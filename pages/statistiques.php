@@ -63,7 +63,7 @@ if (isset($_SESSION['employe'])) {
                                         x.push(e.nomf);
                                         y.push(e.nbr);
                                     });
-                                  //alert(JSON.stringify(data));
+                                 
                                     showGraph(x, y);
                                 },
                                 error: function (jqXHR, textStatus, errorThrown) {
@@ -134,76 +134,6 @@ if (isset($_SESSION['employe'])) {
                                 });
                             }
                         </script>
-                    </div>
-                    <b><label style="font-size: 25px; color: #008080; font-family:Stencil Std, fantasy;" >Graphe numéro 2 :</label></b>
-                    <div class="row">
-                        <canvas id="myChart1" width="200" height="100"></canvas>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js" type="text/javascript"></script>
-                        <script>
-                            var ctx1 = document.getElementById('myChart1').getContext('2d');
-                            var myChart = new Chart(ctx1, {
-                                type: 'line',
-                                data: {
-                                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                                    datasets: [{
-                                            label: '# of Votes',
-                                            data: [12, 19, 3, 5, 2, 3],
-                                            backgroundColor: [
-                                                'rgba(255, 99, 132, 0.2)',
-                                                'rgba(54, 162, 235, 0.2)',
-                                                'rgba(255, 206, 86, 0.2)',
-                                                'rgba(75, 192, 192, 0.2)',
-                                                'rgba(153, 102, 255, 0.2)',
-                                                'rgba(255, 159, 64, 0.2)'
-                                            ],
-                                            borderColor: [
-                                                'rgba(255, 99, 132, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(255, 206, 86, 1)',
-                                                'rgba(75, 192, 192, 1)',
-                                                'rgba(153, 102, 255, 1)',
-                                                'rgba(255, 159, 64, 1)'
-                                            ],
-                                            borderWidth: 1
-                                        }]
-                                },
-                               options: {
-                                        responsive: true,
-                                        plugins: {
-                                            legend: {
-                                                position: 'right',
-                                                labels: {
-                                                    generateLabels: function (chart) {
-                                                        return chart.data.labels.map(function (label, i) {
-                                                            return {
-                                                                text: label,
-                                                                fillStyle: chart.data.datasets[0].backgroundColor
-                                                            };
-                                                        });
-                                                    }
-                                                }
-                                            },
-                                            title: {
-                                                display: true,
-                                                text: 'Nombres de classes par filières (graphe2):'
-                                            }
-                                        },
-                                        scales: {
-                                            y: {
-                                                title: {
-                                                    display: true,
-                                                    text: 'Nombres de classes '}
-                                            },
-                                            x: {
-                                                title: {
-                                                    display: true,
-                                                    text: 'Filières '}
-                                            }
-                                        }
-                                    }
-                            });
-                        </script>
-
                     </div>
                 </div>
             </section>
